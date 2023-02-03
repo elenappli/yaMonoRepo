@@ -1,0 +1,3 @@
+include('serviceA')
+include('serviceB')
+include('serviceC')
