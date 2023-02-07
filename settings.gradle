@@ -1,4 +1,7 @@
-include('serviceA')
-include('serviceB')
-include('serviceC')
-include('libX')
+rootProject.name='backend'
+
+includeBuild('libX')
+
+includeBuild('serviceA')
+includeBuild('serviceB')
+includeBuild('serviceC')
