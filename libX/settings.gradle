@@ -1,5 +1,4 @@
 rootProject.name = 'libX'
-include('lib')
 
 dependencyResolutionManagement {
     versionCatalogs {
