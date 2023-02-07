@@ -5,8 +5,6 @@ public class NameGetter {
     }
 
     public static String getServiceName(String id) {
-        StringBuilder sb = new StringBuilder("service-");
-        sb.append(id);
-        return sb.toString();
+        return "service-" + id;
     }
 }
