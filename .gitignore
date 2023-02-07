@@ -19,5 +19,8 @@
 # Intellij settings
 .idea/
 
+# Build directories
+**/build/
+
 # Intellij settings
 .DS_Store
