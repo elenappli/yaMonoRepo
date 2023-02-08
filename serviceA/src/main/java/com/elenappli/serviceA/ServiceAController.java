@@ -1,5 +1,6 @@
 package com.elenappli.serviceA;
 
+import com.elenappli.libX.NameGetter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ public class ServiceAController {
 
     @GetMapping("/name")
     public ResponseEntity<String> getName() {
-        return ResponseEntity.ok("service-a");
+        String name = NameGetter.getServiceName("a");
+        return ResponseEntity.ok(name);
     }
 }

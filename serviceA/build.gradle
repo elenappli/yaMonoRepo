@@ -16,6 +16,7 @@ dependencies {
 	implementation libs.springBootStarterWebLib
 	implementation libs.springDocOpenApiLib
 	implementation libs.springBootStarterTestLib
+	implementation "com.elenappli:libX"
 }
 
 tasks.named('test') {
