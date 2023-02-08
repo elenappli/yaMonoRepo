@@ -1,5 +1,6 @@
 package com.elenappli.serviceC;
 
+import com.elenappli.libX.NameGetter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ public class ServiceCController {
 
     @GetMapping("/name")
     public ResponseEntity<String> getName() {
-        return ResponseEntity.ok("service-c");
+        String name = NameGetter.getServiceName("c");
+        return ResponseEntity.ok(name);
     }
 }
