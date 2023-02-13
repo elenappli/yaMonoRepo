@@ -1,6 +1,7 @@
 rootProject.name='yaMonoRepo'
 
 includeBuild 'libX'
+includeBuild 'libY'
 
 includeBuild 'serviceA'
 includeBuild 'serviceB'
