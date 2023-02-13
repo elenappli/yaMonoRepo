@@ -1,6 +1,6 @@
 rootProject.name = 'serviceB'
 
-includeBuild('../libX')
+includeBuild('../')
 
 dependencyResolutionManagement {
     versionCatalogs {
