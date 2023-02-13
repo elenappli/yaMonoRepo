@@ -17,6 +17,7 @@ dependencies {
 	implementation libs.springDocOpenApiLib
 	implementation libs.springBootStarterTestLib
 	implementation "com.elenappli:libX"
+	implementation "com.elenappli:libY"
 }
 
 tasks.named('test') {
