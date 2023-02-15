@@ -13,7 +13,6 @@ public class ServiceAController {
     @GetMapping("/name")
     public ResponseEntity<String> getName() {
         String name = NameGetter.getServiceName("a");
-        some junk
         return ResponseEntity.ok(name);
     }
 }
