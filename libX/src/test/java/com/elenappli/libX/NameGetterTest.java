@@ -12,7 +12,7 @@ class NameGetterTest {
         assertEquals("service-a", actualServiceNameA);
 
         String actualServiceNameB = NameGetter.getServiceName("b");
-        assertEquals("service-b", actualServiceNameB);
+        assertEquals("service-c", actualServiceNameB);
     }
 
 }
