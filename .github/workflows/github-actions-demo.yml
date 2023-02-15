@@ -1,13 +1,13 @@
 name: Main CICD Pipeline
-run-name: Main CICD Pipeline
 on: [push]
 jobs:
-  Main-CICD-Pipeline:
+  main-cicd-pipeline:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Starting Main CICD Pipeline for ${{ github.ref }}..."
-      - name: Check out repository code
+      - name: Check out repository
         uses: actions/checkout@v3
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
       - name: Build & Test
         run: ./build-all.sh
       - run: echo "Status is ${{ job.status }}."
