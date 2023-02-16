@@ -1,2 +1,2 @@
 #!/bin/sh
-./gradlew :serviceA:build :serviceB:build :serviceC:build
+./gradlew :libX:build :libY:build :serviceA:build :serviceB:build :serviceC:build
