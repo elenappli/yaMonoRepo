@@ -1,5 +1,6 @@
 name: Main CICD Pipeline
-on: [push]
+on:
+  workflow_dispatch:
 jobs:
   main-cicd-pipeline:
     runs-on: ubuntu-latest
