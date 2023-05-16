@@ -1,14 +1,15 @@
-buildCache {
-    local {
-        enabled = false
-    }
-
-    remote(HttpBuildCache) {
-        url = 'http://localhost:80/cache/'
-        push = true
-        allowInsecureProtocol = true
-    }
-}
+//Disable buildCache until setup remote cache
+//buildCache {
+//    local {
+//        enabled = false
+//    }
+//
+//    remote(HttpBuildCache) {
+//        url = 'http://localhost:80/cache/'
+//        push = true
+//        allowInsecureProtocol = true
+//    }
+//}
 
 rootProject.name='yaMonoRepo'
 
