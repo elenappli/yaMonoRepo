@@ -15,4 +15,9 @@ public class ServiceAController {
         String name = NameGetter.getServiceName("a");
         return ResponseEntity.ok(name);
     }
+
+    @GetMapping("/help")
+    public ResponseEntity<String> getHelp() {
+        return ResponseEntity.ok("This is serviceA that does nothing");
+    }
 }
