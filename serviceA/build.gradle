@@ -1,24 +1,29 @@
 plugins {
-	id 'java'
-	alias(libs.plugins.springBootPlugin)
-	alias(libs.plugins.springDependencyManagementPlugin)
+    id 'java'
+    id 'checkstyle'
+    alias(libs.plugins.springBootPlugin)
+    alias(libs.plugins.springDependencyManagementPlugin)
 }
 
 group = 'com.elenappli'
 sourceCompatibility = '17'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation libs.springBootStarterLib
-	implementation libs.springBootStarterWebLib
-	implementation libs.springDocOpenApiLib
-	implementation libs.springBootStarterTestLib
-	implementation "com.elenappli:libX"
+    implementation libs.springBootStarterLib
+    implementation libs.springBootStarterWebLib
+    implementation libs.springDocOpenApiLib
+    implementation libs.springBootStarterTestLib
+    implementation "com.elenappli:libX"
 }
 
 tasks.named('test') {
-	useJUnitPlatform()
+    useJUnitPlatform()
+}
+
+checkstyle {
+    toolVersion '7.8.1'
 }
