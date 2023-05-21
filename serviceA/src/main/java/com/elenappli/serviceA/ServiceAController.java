@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/service-a")
 public class ServiceAController {
+    private final static String HELP_MESSAGE = "This is serviceA that does nothing";
 
     @GetMapping("/name")
     public ResponseEntity<String> getName() {
@@ -18,6 +19,6 @@ public class ServiceAController {
 
     @GetMapping("/help")
     public ResponseEntity<String> getHelp() {
-        return ResponseEntity.ok("This is serviceA that does nothing");
+        return ResponseEntity.ok(HELP_MESSAGE);
     }
 }
