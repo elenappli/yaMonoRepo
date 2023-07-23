@@ -18,4 +18,9 @@ public class ServiceCController {
     String name = NameGetter.getServiceName(id);
     return ResponseEntity.ok(name);
   }
+
+  @GetMapping("/something")
+  public ResponseEntity<String> getSomething() {
+    return ResponseEntity.ok("something");
+  }
 }
